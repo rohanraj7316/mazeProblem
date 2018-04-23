@@ -4,10 +4,13 @@ import logo from './logo.svg';
 import './App.css';
 import Board from './component/Board';
 
+/**
+ * @extends Component
+ */
 class App extends Component {
   
   /**
-   * 
+   * @description - Initializing Basic parmeters.
    */
   constructor() {
     super();  
@@ -19,6 +22,7 @@ class App extends Component {
       x: this.getRandomArbitrary(0, this.boardWidth),
       y: this.getRandomArbitrary(0, this.boardHeight)
     };
+
     this.board = new Array(this.boardWidth);
 
     for(var i = 0; i < this.boardWidth; i++) {
@@ -131,7 +135,8 @@ class App extends Component {
   }
  
   /**
-   * 
+   * @description - Rendering Outer Layout.
+   * @todo - Adjust auto-focous.
    */
   render() {
     return (

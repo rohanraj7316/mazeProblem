@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import Column from './Column';
 
-const styles = {
-    row: {
-      clear: 'both'
-    }
-};
-
+/**
+ * @extends - Components.
+ */
 export default class Border extends Component {
   
     getColoum() {

@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import Row from './Row';
 
+/**
+ * @extends Component
+ */
 export default class Board extends Component {
-    
+   
+    /**
+     * @description - Rendering Rows.
+     * @returns {List} - Return list with div. 
+     */
     getRows() {
         let rowsRender = [];
         for (var i = 0; i < this.props.boardWidth; i++) {
@@ -10,8 +17,9 @@ export default class Board extends Component {
         }
         return rowsRender;
     }
+
     /**
-     * 
+     *  
      */
     render() {
         return (

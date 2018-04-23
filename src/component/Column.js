@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 let foodCounter = 0;
 
+/**
+ * @extends - Components.
+ */
 export default class Column extends Component {    
     render () {
         const additionalClass = (function() {
