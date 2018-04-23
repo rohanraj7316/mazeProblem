@@ -6,7 +6,7 @@ export default class Board extends Component {
     getRows() {
         let rowsRender = [];
         for (var i = 0; i < this.props.boardWidth; i++) {
-            rowsRender.push( <Row key = { i } boardHeight = {this.props.boardHeight} board = {this.props.board} rowPosition = { i }/> );
+            rowsRender.push( <Row key = { i } boardHeight = {this.props.boardHeight} board = {this.props.board} rowPosition = { i } marioPosition = { this.props.marioPosition } foodCount= { this.props.foodCount } totalCount = { this.props.totalCount }/> );
         }
         return rowsRender;
     }
